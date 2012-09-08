@@ -10,13 +10,17 @@
 #main {
 }
 
-#main .row {
+.demo #main .row {
     background: #ddd;
     margin: 20px 0;
     border-radius: 5px;
 }
 
-#main .row .column b {
+.practical-demo #main .row {
+    background: #ddd;
+}
+
+#main .row .columns b {
     display: block;
     text-align: center;
     padding-top: 5px;
@@ -29,13 +33,22 @@
     margin-top: 10px;
 }
 
-.oldie #main .row .column b,
-#main .row .column:first-child b {
+.practical-demo #main .row .columns b {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.oldie #main .row .columns b,
+#main .row .columns:first-child b {
     margin-top: 0;
 }
 
 @media screen and (min-width:768px) {
-    #main .row .column b {
+    #main .row .columns b {
         margin-top: 0;
+    }
+    
+    .practical-demo #main .callouts .columns b {
+        margin-bottom: 0;
     }
 }
